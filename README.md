@@ -51,8 +51,4 @@ Feel free to customize the program to suit your needs. You may consider the foll
 
 ## Contributors
 
--   Your Name
-
-## License
-
-This project is licensed under the MIT License.
+-   Sherifdeen Adebayo - [herdeybayor](https://github.com/herdeybayor)
