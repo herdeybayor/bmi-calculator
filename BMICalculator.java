@@ -13,7 +13,7 @@ public class BMICalculator {
         // Validate the input
         do {
             if (weight < 0) {
-                System.out.println("Weight cannot be negative. Please enter a valid weight in kilograms: ");
+                System.out.print("Weight cannot be negative. Please enter a valid weight in kilograms: ");
                 weight = scanner.nextDouble();
             }
         } while (weight < 0);
@@ -25,7 +25,7 @@ public class BMICalculator {
         // Validate the input
         do {
             if (height < 0) {
-                System.out.println("Height cannot be negative. Please enter a valid height in meters: ");
+                System.out.print("Height cannot be negative. Please enter a valid height in meters: ");
                 height = scanner.nextDouble();
             }
         } while (height < 0);
