@@ -10,9 +10,25 @@ public class BMICalculator {
         System.out.print("Enter your weight in kilograms: ");
         double weight = scanner.nextDouble();
 
+        // Validate the input
+        do {
+            if (weight < 0) {
+                System.out.println("Weight cannot be negative. Please enter a valid weight in kilograms: ");
+                weight = scanner.nextDouble();
+            }
+        } while (weight < 0);
+
         // Prompt the user to enter height in meters
         System.out.print("Enter your height in meters: ");
         double height = scanner.nextDouble();
+
+        // Validate the input
+        do {
+            if (height < 0) {
+                System.out.println("Height cannot be negative. Please enter a valid height in meters: ");
+                height = scanner.nextDouble();
+            }
+        } while (height < 0);
 
         // Calculate BMI
         double bmi = calculateBMI(weight, height);
@@ -47,3 +63,26 @@ public class BMICalculator {
     }
 }
 
+/**
+ * Example Usage 1:
+ * Enter your weight in kilograms: 70
+ * Enter your height in meters: 1.75
+ * Your BMI is: 22.857142857142858
+ * Interpretation: Normal weight
+ */
+
+/**
+ * Example Usage 2:
+ * Enter your weight in kilograms: 90
+ * Enter your height in meters: 1.75
+ * Your BMI is: 29.387755102040817
+ * Interpretation: Overweight
+ */
+
+/**
+ * Example Usage 3:
+ * Enter your weight in kilograms: 100
+ * Enter your height in meters: 1.75
+ * Your BMI is: 32.6530612244898
+ * Interpretation: Obese
+ */
